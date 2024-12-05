@@ -67,7 +67,7 @@ jobs:
       - name: Upload using iTMSTransporter
         env:
           WORKING_DIRECTORY: build/ios/ipa
-          IPA_FILE_NAME: oiyonice.ipa
+          IPA_FILE_NAME: release-ipa.ipa
           APPLE_USERNAME: Nina2000HH@outlook.com
           APPLE_PASSWORD: zeqo-kyio-mlkw-kbwf
           APPLE_ASC_PROVIDER: 798RL7J5U7
