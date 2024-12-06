@@ -11,12 +11,6 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      - name: Select Xcode Version
-        run: |
-          sudo xcode-select -p # 查看当前版本
-          sudo xcode-select -s /Applications/Xcode_15.0.app # 切换到 Xcode 15.0
-          xcodebuild -version # 验证版本
-
       - uses: actions/checkout@v2
 
       - uses: subosito/flutter-action@v1
@@ -56,7 +50,8 @@ jobs:
 
       - uses: cedvdb/action-flutter-build-ios@v1
         with:
-          build-cmd: flutter build ipa --release --export-options-plist=ios/ExportOptions.plist
+          build-cmd: |
+            flutter build ipa --release --export-options-plist=ios/ExportOptions.plist --no-tree-shake-icons
           certificate-base64: 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
 
           certificate-password: 111111
@@ -79,6 +74,18 @@ jobs:
           name: release-ipa
           path: build/ios/ipa
 
+      # 可删除
+      - name: Check IPA Contents
+        run: |
+          cd $WORKING_DIRECTORY
+          # 解压 IPA 文件
+          unzip -p oiyo.ipa 'Payload/*.app/Info.plist' > extracted_info.plist
+          # 显示 Info.plist 内容
+          plutil -p extracted_info.plist
+          # 特别检查后台模式
+          plutil -p extracted_info.plist | grep -A 5 "UIBackgroundModes"
+
+
       - name: Upload using iTMSTransporter
         env:
           WORKING_DIRECTORY: build/ios/ipa
@@ -89,4 +96,4 @@ jobs:
         run: |
           cd $WORKING_DIRECTORY
           git clone https://github.com/ZhangLi1984/itsm.git
-          ./itsm/bin/iTMSTransporter -assetFile $IPA_FILE_NAME -u $APPLE_USERNAME -p $APPLE_PASSWORD -m upload -asc_provider $APPLE_ASC_PROVIDER
+          ./itsm/bin/iTMSTransporter -assetFile $IPA_FILE_NAME -u $APPLE_USERNAME -p $APPLE_PASSWORD -m upload -asc_provider $APPLE_ASC_PROVIDER -v verbose
