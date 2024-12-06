@@ -94,6 +94,6 @@ jobs:
           gem install fastlane
           fastlane pilot upload \
             --ipa "build/ios/ipa/oiyo.ipa" \
-            --username "$APPLE_USERNAME" \
-            --password "$APPLE_PASSWORD" \
+            --username "Nina2000HH@outlook.com" \
+            -p "zeqo-kyio-mlkw-kbwf" \
             --skip_waiting_for_build_processing
