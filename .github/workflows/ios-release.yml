@@ -88,12 +88,11 @@ jobs:
       #     ./itsm/bin/iTMSTransporter -assetFile $IPA_FILE_NAME -u $APPLE_USERNAME -p $APPLE_PASSWORD -m upload -asc_provider $APPLE_ASC_PROVIDER -v verbose
       - name: Upload to App Store using Fastlane
         env:
-          APPLE_USERNAME: Nina2000HH@outlook.com
-          APPLE_PASSWORD: zeqo-kyio-mlkw-kbwf
+          FASTLANE_USER: Nina2000HH@outlook.com
+          FASTLANE_PASSWORD: zeqo-kyio-mlkw-kbwf
+          FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD: zeqo-kyio-mlkw-kbwf
         run: |
           gem install fastlane
           fastlane pilot upload \
             --ipa "build/ios/ipa/oiyo.ipa" \
-            --username "Nina2000HH@outlook.com" \
-            -p "zeqo-kyio-mlkw-kbwf" \
             --skip_waiting_for_build_processing
