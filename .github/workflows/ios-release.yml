@@ -74,25 +74,7 @@ jobs:
           name: release-ipa
           path: build/ios/ipa
 
-      # 可删除
-      - name: Check IPA and Project Settings
-        run: |
-          cd $WORKING_DIRECTORY
-          echo "1. 检查 IPA 中的 Info.plist 配置："
-          unzip -p oiyo.ipa 'Payload/*.app/Info.plist' > extracted_info.plist
-          echo "\n2. 完整的 Info.plist 内容："
-          plutil -p extracted_info.plist
           
-          echo "\n3. 特别检查后台模式配置："
-          plutil -extract UIBackgroundModes xml1 -o - extracted_info.plist || echo "No UIBackgroundModes found"
-          
-          echo "\n4. 检查项目的原始 Info.plist："
-          plutil -p ../ios/Runner/Info.plist
-          
-          echo "\n5. 检查 Xcode 项目配置："
-          xcodebuild -project ../ios/Runner.xcodeproj -list
-
-
       - name: Upload using iTMSTransporter
         env:
           WORKING_DIRECTORY: build/ios/ipa
