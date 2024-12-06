@@ -89,6 +89,7 @@ jobs:
       - name: Upload to App Store using Fastlane
         env:
           FASTLANE_USER: Nina2000HH@outlook.com
+          FASTLANE_PASSWORD: Nina2024@
           FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD: zeqo-kyio-mlkw-kbwf
         run: |
           gem install fastlane
