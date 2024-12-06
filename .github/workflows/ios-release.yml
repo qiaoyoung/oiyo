@@ -75,14 +75,25 @@ jobs:
           path: build/ios/ipa
 
           
-      - name: Upload using iTMSTransporter
+      # - name: Upload using iTMSTransporter
+      #   env:
+      #     WORKING_DIRECTORY: build/ios/ipa
+      #     IPA_FILE_NAME: oiyo.ipa
+      #     APPLE_USERNAME: Nina2000HH@outlook.com
+      #     APPLE_PASSWORD: zeqo-kyio-mlkw-kbwf
+      #     APPLE_ASC_PROVIDER: 798RL7J5U7
+      #   run: |
+      #     cd $WORKING_DIRECTORY
+      #     git clone https://github.com/ZhangLi1984/itsm.git
+      #     ./itsm/bin/iTMSTransporter -assetFile $IPA_FILE_NAME -u $APPLE_USERNAME -p $APPLE_PASSWORD -m upload -asc_provider $APPLE_ASC_PROVIDER -v verbose
+      - name: Upload to App Store using Fastlane
         env:
-          WORKING_DIRECTORY: build/ios/ipa
-          IPA_FILE_NAME: oiyo.ipa
           APPLE_USERNAME: Nina2000HH@outlook.com
           APPLE_PASSWORD: zeqo-kyio-mlkw-kbwf
-          APPLE_ASC_PROVIDER: 798RL7J5U7
         run: |
-          cd $WORKING_DIRECTORY
-          git clone https://github.com/ZhangLi1984/itsm.git
-          ./itsm/bin/iTMSTransporter -assetFile $IPA_FILE_NAME -u $APPLE_USERNAME -p $APPLE_PASSWORD -m upload -asc_provider $APPLE_ASC_PROVIDER -v verbose
+          gem install fastlane
+          fastlane pilot upload \
+            --ipa "build/ios/ipa/oiyo.ipa" \
+            --username "$APPLE_USERNAME" \
+            --password "$APPLE_PASSWORD" \
+            --skip_waiting_for_build_processing
