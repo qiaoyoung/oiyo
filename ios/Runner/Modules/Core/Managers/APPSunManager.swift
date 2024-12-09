@@ -22,14 +22,14 @@ class APPSunManager: NSObject {
         
         var coins: Int {
             switch self {
-            case .oiyo2: return 100
-            case .oiyo5: return 300
-            case .oiyo9: return 600
-            case .oiyo19: return 1500
-            case .oiyo49: return 4000
-            case .oiyo99: return 8500
-            case .oiyo159: return 15000
-            case .oiyo239: return 25000
+            case .oiyo2: return 96
+            case .oiyo5: return 189
+            case .oiyo9: return 359
+            case .oiyo19: return 729
+            case .oiyo49: return 1869
+            case .oiyo99: return 3799
+            case .oiyo159: return 5999
+            case .oiyo239: return 9059
             default: return 0
             }
         }
