@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (5.10.2)
+  - Alamofire (5.10.1)
   - Flutter (1.0.0)
   - IQKeyboardManagerSwift (6.5.16)
   - JDStatusBarNotification (2.2.2)
@@ -19,7 +19,7 @@ DEPENDENCIES:
   - SnapKit (~> 5.6.0)
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - IQKeyboardManagerSwift
     - JDStatusBarNotification
@@ -32,7 +32,7 @@ EXTERNAL SOURCES:
     :path: Flutter
 
 SPEC CHECKSUMS:
-  Alamofire: 7193b3b92c74a07f85569e1a6c4f4237291e7496
+  Alamofire: 840d2a1ad82355b536ec6ba5f97e5bfa54600ca3
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
   IQKeyboardManagerSwift: 12d89768845bb77b55cc092ecc2b1f9370f06b76
   JDStatusBarNotification: 329fe1ab34808f865b8d1cb4dae3c8aff2695002
