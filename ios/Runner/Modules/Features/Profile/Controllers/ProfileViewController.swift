@@ -5,12 +5,16 @@ class ProfileViewController: UIViewController {
     
     private enum Section: Int, CaseIterable {
         case header         // User info header
+        case vip           // VIP subscription
+        case coins         // Coins recharge
         case features      // Features
         case about         // About
         
         var title: String {
             switch self {
             case .header: return ""
+            case .vip: return "VIP Subscription"
+            case .coins: return "Coins Package"
             case .features: return "Features"
             case .about: return "Other"
             }
@@ -148,9 +152,36 @@ class ProfileViewController: UIViewController {
             },
         ]
         
+        // VIP subscription
+        menuData[.vip] = [
+            MenuItem(
+                icon: "crown.fill",
+                title: "VIP Subscription",
+                subtitle: nil,
+                type: .arrow,
+                showArrow: true
+            ) { [weak self] in
+                self?.handleVIPSubscription()
+            }
+        ]
+        
+        // Coins package
+        menuData[.coins] = [
+            MenuItem(
+                icon: "dollarsign.circle.fill",
+                title: "Purchase Coins",
+                subtitle: nil,
+                type: .arrow,
+                showArrow: true
+            ) { [weak self] in
+                self?.handleCoinsPackages()
+            }
+        ]
+        
         // Refresh UI
         tableView.reloadData()
     }
+    
     
     // MARK: - Actions
    
@@ -313,6 +344,21 @@ class ProfileViewController: UIViewController {
         } else {
             return String(format: "%.1fGB", Double(size) / 1024.0 / 1024.0 / 1024.0)
         }
+    }
+   
+    
+  
+    
+    private func handleVIPSubscription() {
+        let vc = VIPPackagesViewController()
+        vc.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func handleCoinsPackages() {
+        let vc = CoinsPackagesViewController()
+        vc.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 

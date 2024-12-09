@@ -1,113 +1,161 @@
 import Foundation
 
-// 导入 UserModel
-
-
-
 class UserDataManager {
     static let shared = UserDataManager()
     
-    private let userDefaults = UserDefaults.standard
-    private let currentUserKey = "CurrentUser"
-    private let isLoggedInKey = "IsUserLoggedIn"
-    private let userDefaultsKey = "UserMoods"
-
+    private let defaults = UserDefaults.standard
+    private let currentUserKey = "currentUser"
+    private let userMoodsKey = "userMoods"
+    private let isLoggedInKey = "isUserLoggedIn"
+    
+    private(set) var currentUser: UserModel? {
+        didSet {
+            saveCurrentUser()
+        }
+    }
+    
     var isUserLoggedIn: Bool {
         get {
-            return userDefaults.bool(forKey: isLoggedInKey)
+            return defaults.bool(forKey: isLoggedInKey)
         }
         set {
-            userDefaults.set(newValue, forKey: isLoggedInKey)
+            defaults.set(newValue, forKey: isLoggedInKey)
         }
     }
     
-    var currentUser: UserModel? {
-        get {
-            guard let data = userDefaults.data(forKey: currentUserKey),
-                  let user = try? JSONDecoder().decode(UserModel.self, from: data) else {
-                // Create default user if none exists
-                let defaultNickname = "User\(String(format: "%04d", Int.random(in: 1000...9999)))"
-                let defaultUser = UserModel(
-                    id: UUID().uuidString,
-                    nickname: defaultNickname,
-                    avatarData: nil
-                )
-                saveUser(defaultUser)
-                return defaultUser
-            }
-            return user
-        }
-        set {
-            if let user = newValue,
-               let data = try? JSONEncoder().encode(user) {
-                userDefaults.set(data, forKey: currentUserKey)
-                isUserLoggedIn = true
-            } else {
-                userDefaults.removeObject(forKey: currentUserKey)
-                isUserLoggedIn = false
-            }
+    private init() {
+        loadCurrentUser()
+    }
+    
+    private func loadCurrentUser() {
+        if let data = defaults.data(forKey: currentUserKey),
+           let user = try? JSONDecoder().decode(UserModel.self, from: data) {
+            currentUser = user
+            isUserLoggedIn = true
+        } else {
+            // 创建默认用户，金币数随机4位数
+            let defaultNickname = "User\(String(format: "%04d", Int.random(in: 1000...9999)))"
+            currentUser = UserModel(
+                id: UUID().uuidString,
+                nickname: defaultNickname,
+                avatarData: nil,  // Data? 类型的 nil
+                coins: Int.random(in: 1000...9999),  // 随机4位数金币
+                vipExpiryDate: nil as Date?  // Date? 类型的 nil
+            )
+            isUserLoggedIn = false
         }
     }
     
-    private init() {}
-    
-    
-    func saveUser(_ user: UserModel) {
-        if let data = try? JSONEncoder().encode(user) {
-            userDefaults.set(data, forKey: currentUserKey)
+    private func saveCurrentUser() {
+        if let user = currentUser,
+           let data = try? JSONEncoder().encode(user) {
+            defaults.set(data, forKey: currentUserKey)
             isUserLoggedIn = true
         }
     }
     
+    // MARK: - Public Methods
+    
+    func logout() {
+        defaults.removeObject(forKey: currentUserKey)
+        isUserLoggedIn = false
+        currentUser = nil
+    }
+    
     func updateUserNickname(_ nickname: String) {
-        if var user = currentUser {
-            user.nickname = nickname
-            saveUser(user)
-        }
+        currentUser?.nickname = nickname
     }
     
     func updateUserAvatar(_ avatarData: Data) {
-        if var user = currentUser {
-            user.avatarData = avatarData
-            saveUser(user)
+        currentUser?.avatarData = avatarData
+    }
+    
+    func addCoins(_ amount: Int) {
+        guard var user = currentUser else { return }
+        user.coins += amount
+        currentUser = user
+        NotificationCenter.default.post(name: .userCoinsDidChange, object: nil)
+    }
+    
+    func deductCoins(_ amount: Int) -> Bool {
+        guard var user = currentUser else { return false }
+        guard user.coins >= amount else { return false }
+        
+        user.coins -= amount
+        currentUser = user
+        NotificationCenter.default.post(name: .userCoinsDidChange, object: nil)
+        return true
+    }
+    
+    func updateVIPStatus(expiryDate: Date) {
+        currentUser?.vipExpiryDate = expiryDate
+    }
+    
+    func extendVIPPeriod(days: Int) {
+        guard var user = currentUser else { return }
+        
+        let newExpiryDate: Date
+        if let currentExpiry = user.vipExpiryDate, currentExpiry > Date() {
+            newExpiryDate = Calendar.current.date(byAdding: .day, value: days, to: currentExpiry) ?? Date()
+        } else {
+            newExpiryDate = Calendar.current.date(byAdding: .day, value: days, to: Date()) ?? Date()
         }
+        
+        user.vipExpiryDate = newExpiryDate
+        currentUser = user
+        NotificationCenter.default.post(name: .userVIPStatusDidChange, object: nil)
     }
     
-    func logout() {
-        userDefaults.removeObject(forKey: currentUserKey)
-        isUserLoggedIn = false
+    // 检查用户是否有足够的金币
+    func hasEnoughCoins(_ amount: Int) -> Bool {
+        return currentUser?.coins ?? 0 >= amount
     }
     
-    // 获取用户的所有心情
+    // 获取用户VIP状态
+    var isVIPActive: Bool {
+        return currentUser?.isVipActive ?? false
+    }
+    
+    // 获取VIP过期时间
+    var vipExpiryDateString: String? {
+        guard let expiryDate = currentUser?.vipExpiryDate else { return nil }
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .short
+        return formatter.string(from: expiryDate)
+    }
+    
+    // 获取用户金币余额
+    var coinsBalance: Int {
+        return currentUser?.coins ?? 0
+    }
+    
+    // MARK: - User Moods
+    
     func getUserMoods() -> [MoodPostModel] {
-
-        guard let data = userDefaults.data(forKey: userDefaultsKey),
+        guard let data = defaults.data(forKey: userMoodsKey),
               let moods = try? JSONDecoder().decode([MoodPostModel].self, from: data) else {
             return []
         }
-        return moods.sorted { $0.timestamp > $1.timestamp }
+        return moods
     }
     
-    func saveUserMoods(moodItems :[MoodPostModel]) {
-
+    func saveUserMoods(moodItems: [MoodPostModel]) {
         if let data = try? JSONEncoder().encode(moodItems) {
-            UserDefaults.standard.set(data, forKey: userDefaultsKey)
+            defaults.set(data, forKey: userMoodsKey)
         }
     }
     
-    
-    // 删除心情
-    func deleteMood(_ mood: MoodPostModel) {
+    func deleteMood(at index: Int) {
         var moods = getUserMoods()
-        moods.removeAll { $0.id == mood.id }
-        
-        if let data = try? JSONEncoder().encode(moods) {
-            userDefaults.set(data, forKey: userDefaultsKey)
-        }
+        guard index < moods.count else { return }
+        moods.remove(at: index)
+        saveUserMoods(moodItems: moods)
     }
     
-    // 清除所有心情
-    func clearAllMoods() {
-        userDefaults.removeObject(forKey: userDefaultsKey)
+    func deleteMood(withId id: String) {
+        var moods = getUserMoods()
+        moods.removeAll { $0.id == id }
+        saveUserMoods(moodItems: moods)
     }
 } 

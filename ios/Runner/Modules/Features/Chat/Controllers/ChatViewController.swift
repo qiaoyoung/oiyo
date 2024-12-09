@@ -141,6 +141,22 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
         setupUI()
         loadMessages()
         scrollToLatestMessage()
+        
+        // 添加金币变化通知监听
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(handleCoinsDidChange),
+            name: .userCoinsDidChange,
+            object: nil
+        )
+        
+        // 添加 VIP 状态变化通知监听
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(handleVIPStatusDidChange),
+            name: .userVIPStatusDidChange,
+            object: nil
+        )
     }
     
     private func setupNavigationBar() {
@@ -254,63 +270,122 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @objc private func handleSend() {
         guard let messageText = messageTextView.text, !messageText.isEmpty else { return }
         
-        // Create new message item
-        let newMessage = ChatItem(ai: ai, lastMessage: messageText, timestamp: Date(), isSender: true, isPinned: false)
+        // 检查用户是否是 VIP 或有足够的金币
+        if !UserDataManager.shared.isVIPActive {
+            // 非 VIP 用户需要检查金币
+            if !UserDataManager.shared.hasEnoughCoins(1) {
+                // 金币不足，显示提示
+                showInsufficientCoinsAlert()
+                return
+            }
+        }
         
-        // Add message to chat history
+        // 创建新消息
+        let newMessage = ChatItem(ai: ai, lastMessage: messageText, timestamp: Date(), isSender: true, isPinned: false)
         messages.append(newMessage)
         messageTextView.text = ""
+        placeholderLabel.isHidden = false
         
-        // Refresh table
+        // 刷新表格
         tableView.reloadData()
+        scrollToLatestMessage()
         
-        // Scroll to latest message
-        let indexPath = IndexPath(row: messages.count - 1, section: 0)
-        tableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
-        
-        // Update title to "Typing..."
+        // 更新标题为"Typing..."
         self.title = "Typing..."
         
-        // Send message to API
+        // 发送消息到 API
         let messageToSend: [[String: String]] = [["role": "user", "content": messageText]]
         
-        provider.request(.chatCompletion(messages: messageToSend)) { result in
-            // Update title to AI's name after request completes
+        provider.request(.chatCompletion(messages: messageToSend)) { [weak self] result in
+            guard let self = self else { return }
+            
+            // 更新标题
             self.title = "Chat with \(self.ai.nickname)"
             
             switch result {
             case .success(let response):
                 do {
-                    // Parse successful response
                     let responseData = try JSONDecoder().decode(ChatResponse.self, from: response.data)
                     if let aiResponseMessage = responseData.choices.first?.message.content {
-                        // Create AI's reply message item
+                        // 如果用户不是 VIP，扣除金币
+                        if !UserDataManager.shared.isVIPActive {
+                            UserDataManager.shared.deductCoins(1)
+                        }
+                        
+                        // 添加 AI 回复
                         let aiMessage = ChatItem(ai: self.ai, lastMessage: aiResponseMessage, timestamp: Date(), isSender: false, isPinned: false)
-                        self.messages.append(aiMessage) // Add AI's reply to chat history
+                        self.messages.append(aiMessage)
                         
-                        // Refresh table
+                        // 刷新界面
                         self.tableView.reloadData()
-                        
-                        // Scroll to latest message
-                        let indexPath = IndexPath(row: self.messages.count - 1, section: 0)
-                        self.tableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
-                        
-                        // Save chat history
+                        self.scrollToLatestMessage()
                         self.saveMessages()
                         
-                        // Send notification to update message list
+                        // 发送通知更新消息列表
                         NotificationCenter.default.post(name: .chatUpdated, object: nil)
                     }
                 } catch {
                     print("Error decoding response: \(error)")
+                    self.showErrorAlert(message: "Failed to process response")
                 }
             case .failure(let error):
                 print("Error sending message: \(error)")
+                self.showErrorAlert(message: "Failed to send message")
             }
         }
         
-        // Save chat history and send notification
         saveMessages()
+    }
+    
+    // 添加提示弹窗方法
+    private func showInsufficientCoinsAlert() {
+        let alert = UIAlertController(
+            title: "Insufficient Coins",
+            message: "You need 1 coin to send a message. Would you like to purchase coins or subscribe to VIP for unlimited messages?",
+            preferredStyle: .alert
+        )
+        
+        alert.addAction(UIAlertAction(title: "Purchase Coins", style: .default) { [weak self] _ in
+            self?.navigateToCoinsPackages()
+        })
+        
+        alert.addAction(UIAlertAction(title: "Subscribe VIP", style: .default) { [weak self] _ in
+            self?.navigateToVIPSubscription()
+        })
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        
+        present(alert, animated: true)
+    }
+    
+    private func showErrorAlert(message: String) {
+        let alert = UIAlertController(
+            title: "Error",
+            message: message,
+            preferredStyle: .alert
+        )
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alert, animated: true)
+    }
+    
+    private func navigateToCoinsPackages() {
+        let vc = CoinsPackagesViewController()
+        vc.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func navigateToVIPSubscription() {
+        let vc = VIPPackagesViewController()
+        vc.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc private func handleCoinsDidChange() {
+        // 可以在这里更新 UI，比如显示当前金币余额
+    }
+    
+    @objc private func handleVIPStatusDidChange() {
+        // 可以在这里更新 UI，比如显示 VIP 标识
     }
 }
 

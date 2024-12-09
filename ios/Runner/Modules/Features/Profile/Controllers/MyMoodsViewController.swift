@@ -82,7 +82,7 @@ extension MyMoodsViewController: UITableViewDelegate {
         let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { [weak self] _, _, completion in
             let mood = self?.moods[indexPath.row]
             if let mood = mood {
-                UserDataManager.shared.deleteMood(mood)
+                UserDataManager.shared.deleteMood(withId: mood.id)
                 self?.loadMoods()
             }
             completion(true)

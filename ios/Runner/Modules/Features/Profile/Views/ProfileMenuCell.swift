@@ -76,6 +76,7 @@ class ProfileMenuCell: UITableViewCell {
         iconImageView.image = UIImage(systemName: item.icon)
         titleLabel.text = item.title
         subtitleLabel.text = item.subtitle
-        arrowImageView.isHidden = !item.showArrow
+        iconImageView.tintColor = ColorManager.primary
+        accessoryType = .none
     }
 } 
