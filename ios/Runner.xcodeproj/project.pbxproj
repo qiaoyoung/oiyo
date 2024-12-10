@@ -16,82 +16,85 @@
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
 		AA565D832CFE99250091317E /* ai_users.json in Resources */ = {isa = PBXBuildFile; fileRef = AA565D3B2CFE99250091317E /* ai_users.json */; };
 		AA565D842CFE99250091317E /* mood_bgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AA565D3C2CFE99250091317E /* mood_bgm.mp3 */; };
-		B19FA9522D0694E300AC724A /* UITableView+EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA8F82D0694E300AC724A /* UITableView+EmptyState.swift */; };
-		B19FA9532D0694E300AC724A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA93A2D0694E300AC724A /* SettingsViewController.swift */; };
-		B19FA9542D0694E300AC724A /* MusicPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9072D0694E300AC724A /* MusicPlayerManager.swift */; };
-		B19FA9552D0694E300AC724A /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9062D0694E300AC724A /* ColorManager.swift */; };
-		B19FA9562D0694E300AC724A /* NotificationName+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA8F52D0694E300AC724A /* NotificationName+Extensions.swift */; };
-		B19FA9572D0694E300AC724A /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA91D2D0694E300AC724A /* MainTabBarController.swift */; };
-		B19FA9582D0694E300AC724A /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA8F92D0694E300AC724A /* UIViewController+Navigation.swift */; };
-		B19FA9592D0694E300AC724A /* WaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA8EF2D0694E300AC724A /* WaterfallLayout.swift */; };
-		B19FA95A2D0694E300AC724A /* MyAICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9492D0694E300AC724A /* MyAICell.swift */; };
-		B19FA95B2D0694E300AC724A /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9312D0694E300AC724A /* AboutUsViewController.swift */; };
-		B19FA95C2D0694E300AC724A /* HelpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9472D0694E300AC724A /* HelpCell.swift */; };
-		B19FA95D2D0694E300AC724A /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA8EE2D0694E300AC724A /* GradientButton.swift */; };
-		B19FA95E2D0694E300AC724A /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9092D0694E300AC724A /* EmptyStateView.swift */; };
-		B19FA95F2D0694E300AC724A /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9452D0694E300AC724A /* CollectionHeaderView.swift */; };
-		B19FA9602D0694E300AC724A /* CategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9252D0694E300AC724A /* CategoryHeaderView.swift */; };
-		B19FA9612D0694E300AC724A /* ChatListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9112D0694E300AC724A /* ChatListCell.swift */; };
-		B19FA9622D0694E300AC724A /* PostMoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9172D0694E300AC724A /* PostMoodViewController.swift */; };
-		B19FA9632D0694E300AC724A /* AppIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA8F12D0694E300AC724A /* AppIntroViewController.swift */; };
-		B19FA9642D0694E300AC724A /* AIDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9292D0694E300AC724A /* AIDetailViewController.swift */; };
-		B19FA9652D0694E300AC724A /* PortalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA92E2D0694E300AC724A /* PortalViewController.swift */; };
-		B19FA9662D0694E300AC724A /* MyAIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9372D0694E300AC724A /* MyAIViewController.swift */; };
-		B19FA9672D0694E300AC724A /* FAQDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9342D0694E300AC724A /* FAQDetailViewController.swift */; };
-		B19FA9682D0694E300AC724A /* MyMoodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9382D0694E300AC724A /* MyMoodsViewController.swift */; };
-		B19FA9692D0694E300AC724A /* BigModelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9042D0694E300AC724A /* BigModelService.swift */; };
-		B19FA96A2D0694E300AC724A /* MoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9002D0694E300AC724A /* MoodModel.swift */; };
-		B19FA96B2D0694E300AC724A /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA90C2D0694E300AC724A /* ChatListViewController.swift */; };
-		B19FA96C2D0694E300AC724A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA8F22D0694E300AC724A /* WebViewController.swift */; };
-		B19FA96D2D0694E300AC724A /* AIFeaturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9212D0694E300AC724A /* AIFeaturesView.swift */; };
-		B19FA96E2D0694E300AC724A /* HelpItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA93E2D0694E300AC724A /* HelpItem.swift */; };
-		B19FA96F2D0694E300AC724A /* ChatItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA90F2D0694E300AC724A /* ChatItem.swift */; };
-		B19FA9702D0694E300AC724A /* ProfileMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA94C2D0694E300AC724A /* ProfileMenuCell.swift */; };
-		B19FA9712D0694E300AC724A /* BrowsingHistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA93D2D0694E300AC724A /* BrowsingHistoryItem.swift */; };
-		B19FA9722D0694E300AC724A /* HorizontalAIUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9262D0694E300AC724A /* HorizontalAIUserCell.swift */; };
-		B19FA9732D0694E300AC724A /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA94D2D0694E300AC724A /* SettingCell.swift */; };
-		B19FA9742D0694E300AC724A /* MoodCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9192D0694E300AC724A /* MoodCardView.swift */; };
-		B19FA9752D0694E300AC724A /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA90D2D0694E300AC724A /* ChatViewController.swift */; };
-		B19FA9762D0694E300AC724A /* AIUserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA8FB2D0694E300AC724A /* AIUserDataManager.swift */; };
-		B19FA9772D0694E300AC724A /* VIPPackagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA93B2D0694E300AC724A /* VIPPackagesViewController.swift */; };
-		B19FA9782D0694E300AC724A /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9362D0694E300AC724A /* HistoryViewController.swift */; };
-		B19FA9792D0694E300AC724A /* MoodPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9012D0694E300AC724A /* MoodPostModel.swift */; };
-		B19FA97A2D0694E300AC724A /* SubscriptionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9412D0694E300AC724A /* SubscriptionType.swift */; };
-		B19FA97B2D0694E300AC724A /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9122D0694E300AC724A /* ChatMessageCell.swift */; };
-		B19FA97C2D0694E300AC724A /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9332D0694E300AC724A /* CollectionViewController.swift */; };
-		B19FA97D2D0694E300AC724A /* AnimatedTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA8ED2D0694E300AC724A /* AnimatedTabBarItem.swift */; };
-		B19FA97E2D0694E300AC724A /* SettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9402D0694E300AC724A /* SettingItem.swift */; };
-		B19FA97F2D0694E300AC724A /* AIBasicInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA91F2D0694E300AC724A /* AIBasicInfoView.swift */; };
-		B19FA9802D0694E300AC724A /* AnimatedTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA8EC2D0694E300AC724A /* AnimatedTabBar.swift */; };
-		B19FA9812D0694E300AC724A /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9162D0694E300AC724A /* DiscoveryViewController.swift */; };
-		B19FA9822D0694E300AC724A /* AIUserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA92B2D0694E300AC724A /* AIUserListViewController.swift */; };
-		B19FA9832D0694E300AC724A /* VIPPackageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA94E2D0694E300AC724A /* VIPPackageCell.swift */; };
-		B19FA9842D0694E300AC724A /* HorizontalCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9272D0694E300AC724A /* HorizontalCategoryCell.swift */; };
-		B19FA9852D0694E300AC724A /* PlazaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA92C2D0694E300AC724A /* PlazaViewController.swift */; };
-		B19FA9862D0694E300AC724A /* CollectionAICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9442D0694E300AC724A /* CollectionAICell.swift */; };
-		B19FA9872D0694E300AC724A /* SuggestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9132D0694E300AC724A /* SuggestionCell.swift */; };
-		B19FA9882D0694E300AC724A /* CoinPackageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9432D0694E300AC724A /* CoinPackageCell.swift */; };
-		B19FA9892D0694E300AC724A /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA8F72D0694E300AC724A /* UIColor+Theme.swift */; };
-		B19FA98A2D0694E300AC724A /* CoinsPackagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9322D0694E300AC724A /* CoinsPackagesViewController.swift */; };
-		B19FA98B2D0694E300AC724A /* Array+SafeSubscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA8F42D0694E300AC724A /* Array+SafeSubscript.swift */; };
-		B19FA98C2D0694E300AC724A /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9482D0694E300AC724A /* HistoryCell.swift */; };
-		B19FA98D2D0694E300AC724A /* AISampleDialogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9222D0694E300AC724A /* AISampleDialogsView.swift */; };
-		B19FA98E2D0694E300AC724A /* APPSunManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA8FC2D0694E300AC724A /* APPSunManager.swift */; };
-		B19FA98F2D0694E300AC724A /* AIDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9202D0694E300AC724A /* AIDescriptionView.swift */; };
-		B19FA9902D0694E300AC724A /* AIStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9232D0694E300AC724A /* AIStatsView.swift */; };
-		B19FA9912D0694E300AC724A /* ProfileHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA94B2D0694E300AC724A /* ProfileHeaderCell.swift */; };
-		B19FA9922D0694E300AC724A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9022D0694E300AC724A /* UserModel.swift */; };
-		B19FA9932D0694E300AC724A /* MyMoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA94A2D0694E300AC724A /* MyMoodCell.swift */; };
-		B19FA9942D0694E300AC724A /* UICollectionView+EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA8F62D0694E300AC724A /* UICollectionView+EmptyState.swift */; };
-		B19FA9952D0694E300AC724A /* AIUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA8FF2D0694E300AC724A /* AIUserModel.swift */; };
-		B19FA9962D0694E300AC724A /* AIUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9242D0694E300AC724A /* AIUserCell.swift */; };
-		B19FA9972D0694E300AC724A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9392D0694E300AC724A /* ProfileViewController.swift */; };
-		B19FA9982D0694E300AC724A /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA8FD2D0694E300AC724A /* UserDataManager.swift */; };
-		B19FA9992D0694E300AC724A /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9352D0694E300AC724A /* FeedbackViewController.swift */; };
-		B19FA99A2D0694E300AC724A /* AIImageViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA92A2D0694E300AC724A /* AIImageViewerController.swift */; };
-		B19FA99B2D0694E300AC724A /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA93F2D0694E300AC724A /* MenuItem.swift */; };
-		B19FA99C2D0694E300AC724A /* MoodTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA91A2D0694E300AC724A /* MoodTypeCell.swift */; };
-		B19FA99D2D0694E300AC724A /* FAQCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9462D0694E300AC724A /* FAQCell.swift */; };
+		B19FAA152D08143200AC724A /* Array+SafeSubscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9B42D08143200AC724A /* Array+SafeSubscript.swift */; };
+		B19FAA162D08143200AC724A /* HelpItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FAA002D08143200AC724A /* HelpItem.swift */; };
+		B19FAA172D08143200AC724A /* PortalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9EF2D08143200AC724A /* PortalViewController.swift */; };
+		B19FAA182D08143200AC724A /* UICollectionView+EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9B62D08143200AC724A /* UICollectionView+EmptyState.swift */; };
+		B19FAA192D08143200AC724A /* VIPPackageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FAA112D08143200AC724A /* VIPPackageCell.swift */; };
+		B19FAA1A2D08143200AC724A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9FA2D08143200AC724A /* ProfileViewController.swift */; };
+		B19FAA1B2D08143200AC724A /* AIUserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9EC2D08143200AC724A /* AIUserListViewController.swift */; };
+		B19FAA1C2D08143200AC724A /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9B92D08143200AC724A /* UIViewController+Navigation.swift */; };
+		B19FAA1D2D08143200AC724A /* ChatListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9D22D08143200AC724A /* ChatListCell.swift */; };
+		B19FAA1E2D08143200AC724A /* CoinPackageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FAA052D08143200AC724A /* CoinPackageCell.swift */; };
+		B19FAA1F2D08143200AC724A /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9CD2D08143200AC724A /* ChatListViewController.swift */; };
+		B19FAA202D08143200AC724A /* MoodPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9C12D08143200AC724A /* MoodPostModel.swift */; };
+		B19FAA212D08143200AC724A /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9D72D08143200AC724A /* DiscoveryViewController.swift */; };
+		B19FAA222D08143200AC724A /* PlazaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9ED2D08143200AC724A /* PlazaViewController.swift */; };
+		B19FAA232D08143200AC724A /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9B72D08143200AC724A /* UIColor+Theme.swift */; };
+		B19FAA242D08143200AC724A /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FAA0A2D08143200AC724A /* HistoryCell.swift */; };
+		B19FAA252D08143200AC724A /* NotificationName+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9B52D08143200AC724A /* NotificationName+Extensions.swift */; };
+		B19FAA262D08143200AC724A /* AIImageViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9EB2D08143200AC724A /* AIImageViewerController.swift */; };
+		B19FAA272D08143200AC724A /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9C72D08143200AC724A /* ColorManager.swift */; };
+		B19FAA282D08143200AC724A /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9F72D08143200AC724A /* HistoryViewController.swift */; };
+		B19FAA292D08143200AC724A /* AIUserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9BB2D08143200AC724A /* AIUserDataManager.swift */; };
+		B19FAA2A2D08143200AC724A /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9CE2D08143200AC724A /* ChatViewController.swift */; };
+		B19FAA2B2D08143200AC724A /* WaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9AF2D08143200AC724A /* WaterfallLayout.swift */; };
+		B19FAA2C2D08143200AC724A /* MyMoodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9F92D08143200AC724A /* MyMoodsViewController.swift */; };
+		B19FAA2D2D08143200AC724A /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9DE2D08143200AC724A /* MainTabBarController.swift */; };
+		B19FAA2E2D08143200AC724A /* AIStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9E42D08143200AC724A /* AIStatsView.swift */; };
+		B19FAA2F2D08143200AC724A /* BrowsingHistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9FF2D08143200AC724A /* BrowsingHistoryItem.swift */; };
+		B19FAA302D08143200AC724A /* FAQCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FAA082D08143200AC724A /* FAQCell.swift */; };
+		B19FAA312D08143200AC724A /* AIBasicInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9E02D08143200AC724A /* AIBasicInfoView.swift */; };
+		B19FAA322D08143200AC724A /* VIPPackagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9FD2D08143200AC724A /* VIPPackagesViewController.swift */; };
+		B19FAA332D08143200AC724A /* APPSunManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9BC2D08143200AC724A /* APPSunManager.swift */; };
+		B19FAA342D08143200AC724A /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9CA2D08143200AC724A /* EmptyStateView.swift */; };
+		B19FAA352D08143200AC724A /* AIUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9E52D08143200AC724A /* AIUserCell.swift */; };
+		B19FAA362D08143200AC724A /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9D32D08143200AC724A /* ChatMessageCell.swift */; };
+		B19FAA372D08143200AC724A /* VIPBenefitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FAA102D08143200AC724A /* VIPBenefitCell.swift */; };
+		B19FAA382D08143200AC724A /* AIDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9E12D08143200AC724A /* AIDescriptionView.swift */; };
+		B19FAA392D08143200AC724A /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9AE2D08143200AC724A /* GradientButton.swift */; };
+		B19FAA3A2D08143200AC724A /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9F22D08143200AC724A /* AboutUsViewController.swift */; };
+		B19FAA3B2D08143200AC724A /* AnimatedTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9AC2D08143200AC724A /* AnimatedTabBar.swift */; };
+		B19FAA3C2D08143200AC724A /* MyAIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9F82D08143200AC724A /* MyAIViewController.swift */; };
+		B19FAA3D2D08143200AC724A /* CategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9E62D08143200AC724A /* CategoryHeaderView.swift */; };
+		B19FAA3E2D08143200AC724A /* PostMoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9D82D08143200AC724A /* PostMoodViewController.swift */; };
+		B19FAA3F2D08143200AC724A /* SettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FAA022D08143200AC724A /* SettingItem.swift */; };
+		B19FAA402D08143200AC724A /* CoinsPackagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9F32D08143200AC724A /* CoinsPackagesViewController.swift */; };
+		B19FAA412D08143200AC724A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9FB2D08143200AC724A /* SettingsViewController.swift */; };
+		B19FAA422D08143200AC724A /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FAA012D08143200AC724A /* MenuItem.swift */; };
+		B19FAA432D08143200AC724A /* ProfileHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FAA0D2D08143200AC724A /* ProfileHeaderCell.swift */; };
+		B19FAA442D08143200AC724A /* HelpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FAA092D08143200AC724A /* HelpCell.swift */; };
+		B19FAA452D08143200AC724A /* ProfileMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FAA0E2D08143200AC724A /* ProfileMenuCell.swift */; };
+		B19FAA462D08143200AC724A /* AIUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9BF2D08143200AC724A /* AIUserModel.swift */; };
+		B19FAA472D08143200AC724A /* BigModelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9C52D08143200AC724A /* BigModelService.swift */; };
+		B19FAA482D08143200AC724A /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9F62D08143200AC724A /* FeedbackViewController.swift */; };
+		B19FAA492D08143200AC724A /* CollectionAICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FAA062D08143200AC724A /* CollectionAICell.swift */; };
+		B19FAA4A2D08143200AC724A /* SuggestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9D42D08143200AC724A /* SuggestionCell.swift */; };
+		B19FAA4B2D08143200AC724A /* HorizontalAIUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9E72D08143200AC724A /* HorizontalAIUserCell.swift */; };
+		B19FAA4C2D08143200AC724A /* AISampleDialogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9E32D08143200AC724A /* AISampleDialogsView.swift */; };
+		B19FAA4D2D08143200AC724A /* AIDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9EA2D08143200AC724A /* AIDetailViewController.swift */; };
+		B19FAA4E2D08143200AC724A /* MyAICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FAA0B2D08143200AC724A /* MyAICell.swift */; };
+		B19FAA4F2D08143200AC724A /* SubscriptionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FAA032D08143200AC724A /* SubscriptionType.swift */; };
+		B19FAA502D08143200AC724A /* AnimatedTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9AD2D08143200AC724A /* AnimatedTabBarItem.swift */; };
+		B19FAA512D08143200AC724A /* MusicPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9C82D08143200AC724A /* MusicPlayerManager.swift */; };
+		B19FAA522D08143200AC724A /* MoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9C02D08143200AC724A /* MoodModel.swift */; };
+		B19FAA532D08143200AC724A /* UITableView+EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9B82D08143200AC724A /* UITableView+EmptyState.swift */; };
+		B19FAA542D08143200AC724A /* ChatItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9D02D08143200AC724A /* ChatItem.swift */; };
+		B19FAA552D08143200AC724A /* FAQDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9F52D08143200AC724A /* FAQDetailViewController.swift */; };
+		B19FAA562D08143200AC724A /* VIPBenefitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9C32D08143200AC724A /* VIPBenefitModel.swift */; };
+		B19FAA572D08143200AC724A /* MoodTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9DB2D08143200AC724A /* MoodTypeCell.swift */; };
+		B19FAA582D08143200AC724A /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FAA0F2D08143200AC724A /* SettingCell.swift */; };
+		B19FAA592D08143200AC724A /* HorizontalCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9E82D08143200AC724A /* HorizontalCategoryCell.swift */; };
+		B19FAA5A2D08143200AC724A /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9F42D08143200AC724A /* CollectionViewController.swift */; };
+		B19FAA5B2D08143200AC724A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9B22D08143200AC724A /* WebViewController.swift */; };
+		B19FAA5C2D08143200AC724A /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FAA072D08143200AC724A /* CollectionHeaderView.swift */; };
+		B19FAA5D2D08143200AC724A /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9BD2D08143200AC724A /* UserDataManager.swift */; };
+		B19FAA5E2D08143200AC724A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9C22D08143200AC724A /* UserModel.swift */; };
+		B19FAA5F2D08143200AC724A /* MoodCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9DA2D08143200AC724A /* MoodCardView.swift */; };
+		B19FAA602D08143200AC724A /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9FC2D08143200AC724A /* TermsViewController.swift */; };
+		B19FAA612D08143200AC724A /* AppIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9B12D08143200AC724A /* AppIntroViewController.swift */; };
+		B19FAA622D08143200AC724A /* MyMoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FAA0C2D08143200AC724A /* MyMoodCell.swift */; };
+		B19FAA632D08143200AC724A /* AIFeaturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19FA9E22D08143200AC724A /* AIFeaturesView.swift */; };
 		E4BFC5FF2D0001D400A426FD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4BFC5FE2D0001D400A426FD /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -128,82 +131,85 @@
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA565D3B2CFE99250091317E /* ai_users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ai_users.json; sourceTree = "<group>"; };
 		AA565D3C2CFE99250091317E /* mood_bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mood_bgm.mp3; sourceTree = "<group>"; };
-		B19FA8EC2D0694E300AC724A /* AnimatedTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTabBar.swift; sourceTree = "<group>"; };
-		B19FA8ED2D0694E300AC724A /* AnimatedTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTabBarItem.swift; sourceTree = "<group>"; };
-		B19FA8EE2D0694E300AC724A /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
-		B19FA8EF2D0694E300AC724A /* WaterfallLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallLayout.swift; sourceTree = "<group>"; };
-		B19FA8F12D0694E300AC724A /* AppIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntroViewController.swift; sourceTree = "<group>"; };
-		B19FA8F22D0694E300AC724A /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		B19FA8F42D0694E300AC724A /* Array+SafeSubscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+SafeSubscript.swift"; sourceTree = "<group>"; };
-		B19FA8F52D0694E300AC724A /* NotificationName+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+Extensions.swift"; sourceTree = "<group>"; };
-		B19FA8F62D0694E300AC724A /* UICollectionView+EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+EmptyState.swift"; sourceTree = "<group>"; };
-		B19FA8F72D0694E300AC724A /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
-		B19FA8F82D0694E300AC724A /* UITableView+EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+EmptyState.swift"; sourceTree = "<group>"; };
-		B19FA8F92D0694E300AC724A /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
-		B19FA8FB2D0694E300AC724A /* AIUserDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIUserDataManager.swift; sourceTree = "<group>"; };
-		B19FA8FC2D0694E300AC724A /* APPSunManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APPSunManager.swift; sourceTree = "<group>"; };
-		B19FA8FD2D0694E300AC724A /* UserDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
-		B19FA8FF2D0694E300AC724A /* AIUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIUserModel.swift; sourceTree = "<group>"; };
-		B19FA9002D0694E300AC724A /* MoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodModel.swift; sourceTree = "<group>"; };
-		B19FA9012D0694E300AC724A /* MoodPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodPostModel.swift; sourceTree = "<group>"; };
-		B19FA9022D0694E300AC724A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		B19FA9042D0694E300AC724A /* BigModelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigModelService.swift; sourceTree = "<group>"; };
-		B19FA9062D0694E300AC724A /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
-		B19FA9072D0694E300AC724A /* MusicPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerManager.swift; sourceTree = "<group>"; };
-		B19FA9092D0694E300AC724A /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
-		B19FA90C2D0694E300AC724A /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
-		B19FA90D2D0694E300AC724A /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
-		B19FA90F2D0694E300AC724A /* ChatItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatItem.swift; sourceTree = "<group>"; };
-		B19FA9112D0694E300AC724A /* ChatListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListCell.swift; sourceTree = "<group>"; };
-		B19FA9122D0694E300AC724A /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
-		B19FA9132D0694E300AC724A /* SuggestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionCell.swift; sourceTree = "<group>"; };
-		B19FA9162D0694E300AC724A /* DiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
-		B19FA9172D0694E300AC724A /* PostMoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMoodViewController.swift; sourceTree = "<group>"; };
-		B19FA9192D0694E300AC724A /* MoodCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodCardView.swift; sourceTree = "<group>"; };
-		B19FA91A2D0694E300AC724A /* MoodTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTypeCell.swift; sourceTree = "<group>"; };
-		B19FA91D2D0694E300AC724A /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		B19FA91F2D0694E300AC724A /* AIBasicInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIBasicInfoView.swift; sourceTree = "<group>"; };
-		B19FA9202D0694E300AC724A /* AIDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIDescriptionView.swift; sourceTree = "<group>"; };
-		B19FA9212D0694E300AC724A /* AIFeaturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIFeaturesView.swift; sourceTree = "<group>"; };
-		B19FA9222D0694E300AC724A /* AISampleDialogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AISampleDialogsView.swift; sourceTree = "<group>"; };
-		B19FA9232D0694E300AC724A /* AIStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIStatsView.swift; sourceTree = "<group>"; };
-		B19FA9242D0694E300AC724A /* AIUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIUserCell.swift; sourceTree = "<group>"; };
-		B19FA9252D0694E300AC724A /* CategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHeaderView.swift; sourceTree = "<group>"; };
-		B19FA9262D0694E300AC724A /* HorizontalAIUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalAIUserCell.swift; sourceTree = "<group>"; };
-		B19FA9272D0694E300AC724A /* HorizontalCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCategoryCell.swift; sourceTree = "<group>"; };
-		B19FA9292D0694E300AC724A /* AIDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIDetailViewController.swift; sourceTree = "<group>"; };
-		B19FA92A2D0694E300AC724A /* AIImageViewerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIImageViewerController.swift; sourceTree = "<group>"; };
-		B19FA92B2D0694E300AC724A /* AIUserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIUserListViewController.swift; sourceTree = "<group>"; };
-		B19FA92C2D0694E300AC724A /* PlazaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlazaViewController.swift; sourceTree = "<group>"; };
-		B19FA92E2D0694E300AC724A /* PortalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalViewController.swift; sourceTree = "<group>"; };
-		B19FA9312D0694E300AC724A /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
-		B19FA9322D0694E300AC724A /* CoinsPackagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsPackagesViewController.swift; sourceTree = "<group>"; };
-		B19FA9332D0694E300AC724A /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
-		B19FA9342D0694E300AC724A /* FAQDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQDetailViewController.swift; sourceTree = "<group>"; };
-		B19FA9352D0694E300AC724A /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
-		B19FA9362D0694E300AC724A /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
-		B19FA9372D0694E300AC724A /* MyAIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAIViewController.swift; sourceTree = "<group>"; };
-		B19FA9382D0694E300AC724A /* MyMoodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMoodsViewController.swift; sourceTree = "<group>"; };
-		B19FA9392D0694E300AC724A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		B19FA93A2D0694E300AC724A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		B19FA93B2D0694E300AC724A /* VIPPackagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPPackagesViewController.swift; sourceTree = "<group>"; };
-		B19FA93D2D0694E300AC724A /* BrowsingHistoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowsingHistoryItem.swift; sourceTree = "<group>"; };
-		B19FA93E2D0694E300AC724A /* HelpItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpItem.swift; sourceTree = "<group>"; };
-		B19FA93F2D0694E300AC724A /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
-		B19FA9402D0694E300AC724A /* SettingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItem.swift; sourceTree = "<group>"; };
-		B19FA9412D0694E300AC724A /* SubscriptionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionType.swift; sourceTree = "<group>"; };
-		B19FA9432D0694E300AC724A /* CoinPackageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinPackageCell.swift; sourceTree = "<group>"; };
-		B19FA9442D0694E300AC724A /* CollectionAICell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionAICell.swift; sourceTree = "<group>"; };
-		B19FA9452D0694E300AC724A /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
-		B19FA9462D0694E300AC724A /* FAQCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQCell.swift; sourceTree = "<group>"; };
-		B19FA9472D0694E300AC724A /* HelpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCell.swift; sourceTree = "<group>"; };
-		B19FA9482D0694E300AC724A /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
-		B19FA9492D0694E300AC724A /* MyAICell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAICell.swift; sourceTree = "<group>"; };
-		B19FA94A2D0694E300AC724A /* MyMoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMoodCell.swift; sourceTree = "<group>"; };
-		B19FA94B2D0694E300AC724A /* ProfileHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderCell.swift; sourceTree = "<group>"; };
-		B19FA94C2D0694E300AC724A /* ProfileMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMenuCell.swift; sourceTree = "<group>"; };
-		B19FA94D2D0694E300AC724A /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
-		B19FA94E2D0694E300AC724A /* VIPPackageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPPackageCell.swift; sourceTree = "<group>"; };
+		B19FA9AC2D08143200AC724A /* AnimatedTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTabBar.swift; sourceTree = "<group>"; };
+		B19FA9AD2D08143200AC724A /* AnimatedTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTabBarItem.swift; sourceTree = "<group>"; };
+		B19FA9AE2D08143200AC724A /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		B19FA9AF2D08143200AC724A /* WaterfallLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallLayout.swift; sourceTree = "<group>"; };
+		B19FA9B12D08143200AC724A /* AppIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntroViewController.swift; sourceTree = "<group>"; };
+		B19FA9B22D08143200AC724A /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		B19FA9B42D08143200AC724A /* Array+SafeSubscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+SafeSubscript.swift"; sourceTree = "<group>"; };
+		B19FA9B52D08143200AC724A /* NotificationName+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+Extensions.swift"; sourceTree = "<group>"; };
+		B19FA9B62D08143200AC724A /* UICollectionView+EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+EmptyState.swift"; sourceTree = "<group>"; };
+		B19FA9B72D08143200AC724A /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
+		B19FA9B82D08143200AC724A /* UITableView+EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+EmptyState.swift"; sourceTree = "<group>"; };
+		B19FA9B92D08143200AC724A /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
+		B19FA9BB2D08143200AC724A /* AIUserDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIUserDataManager.swift; sourceTree = "<group>"; };
+		B19FA9BC2D08143200AC724A /* APPSunManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APPSunManager.swift; sourceTree = "<group>"; };
+		B19FA9BD2D08143200AC724A /* UserDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
+		B19FA9BF2D08143200AC724A /* AIUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIUserModel.swift; sourceTree = "<group>"; };
+		B19FA9C02D08143200AC724A /* MoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodModel.swift; sourceTree = "<group>"; };
+		B19FA9C12D08143200AC724A /* MoodPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodPostModel.swift; sourceTree = "<group>"; };
+		B19FA9C22D08143200AC724A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		B19FA9C32D08143200AC724A /* VIPBenefitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPBenefitModel.swift; sourceTree = "<group>"; };
+		B19FA9C52D08143200AC724A /* BigModelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigModelService.swift; sourceTree = "<group>"; };
+		B19FA9C72D08143200AC724A /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
+		B19FA9C82D08143200AC724A /* MusicPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerManager.swift; sourceTree = "<group>"; };
+		B19FA9CA2D08143200AC724A /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		B19FA9CD2D08143200AC724A /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
+		B19FA9CE2D08143200AC724A /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		B19FA9D02D08143200AC724A /* ChatItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatItem.swift; sourceTree = "<group>"; };
+		B19FA9D22D08143200AC724A /* ChatListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListCell.swift; sourceTree = "<group>"; };
+		B19FA9D32D08143200AC724A /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
+		B19FA9D42D08143200AC724A /* SuggestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionCell.swift; sourceTree = "<group>"; };
+		B19FA9D72D08143200AC724A /* DiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
+		B19FA9D82D08143200AC724A /* PostMoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMoodViewController.swift; sourceTree = "<group>"; };
+		B19FA9DA2D08143200AC724A /* MoodCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodCardView.swift; sourceTree = "<group>"; };
+		B19FA9DB2D08143200AC724A /* MoodTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTypeCell.swift; sourceTree = "<group>"; };
+		B19FA9DE2D08143200AC724A /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		B19FA9E02D08143200AC724A /* AIBasicInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIBasicInfoView.swift; sourceTree = "<group>"; };
+		B19FA9E12D08143200AC724A /* AIDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIDescriptionView.swift; sourceTree = "<group>"; };
+		B19FA9E22D08143200AC724A /* AIFeaturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIFeaturesView.swift; sourceTree = "<group>"; };
+		B19FA9E32D08143200AC724A /* AISampleDialogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AISampleDialogsView.swift; sourceTree = "<group>"; };
+		B19FA9E42D08143200AC724A /* AIStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIStatsView.swift; sourceTree = "<group>"; };
+		B19FA9E52D08143200AC724A /* AIUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIUserCell.swift; sourceTree = "<group>"; };
+		B19FA9E62D08143200AC724A /* CategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHeaderView.swift; sourceTree = "<group>"; };
+		B19FA9E72D08143200AC724A /* HorizontalAIUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalAIUserCell.swift; sourceTree = "<group>"; };
+		B19FA9E82D08143200AC724A /* HorizontalCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCategoryCell.swift; sourceTree = "<group>"; };
+		B19FA9EA2D08143200AC724A /* AIDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIDetailViewController.swift; sourceTree = "<group>"; };
+		B19FA9EB2D08143200AC724A /* AIImageViewerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIImageViewerController.swift; sourceTree = "<group>"; };
+		B19FA9EC2D08143200AC724A /* AIUserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIUserListViewController.swift; sourceTree = "<group>"; };
+		B19FA9ED2D08143200AC724A /* PlazaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlazaViewController.swift; sourceTree = "<group>"; };
+		B19FA9EF2D08143200AC724A /* PortalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalViewController.swift; sourceTree = "<group>"; };
+		B19FA9F22D08143200AC724A /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		B19FA9F32D08143200AC724A /* CoinsPackagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsPackagesViewController.swift; sourceTree = "<group>"; };
+		B19FA9F42D08143200AC724A /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		B19FA9F52D08143200AC724A /* FAQDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQDetailViewController.swift; sourceTree = "<group>"; };
+		B19FA9F62D08143200AC724A /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		B19FA9F72D08143200AC724A /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		B19FA9F82D08143200AC724A /* MyAIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAIViewController.swift; sourceTree = "<group>"; };
+		B19FA9F92D08143200AC724A /* MyMoodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMoodsViewController.swift; sourceTree = "<group>"; };
+		B19FA9FA2D08143200AC724A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B19FA9FB2D08143200AC724A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		B19FA9FC2D08143200AC724A /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
+		B19FA9FD2D08143200AC724A /* VIPPackagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPPackagesViewController.swift; sourceTree = "<group>"; };
+		B19FA9FF2D08143200AC724A /* BrowsingHistoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowsingHistoryItem.swift; sourceTree = "<group>"; };
+		B19FAA002D08143200AC724A /* HelpItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpItem.swift; sourceTree = "<group>"; };
+		B19FAA012D08143200AC724A /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		B19FAA022D08143200AC724A /* SettingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItem.swift; sourceTree = "<group>"; };
+		B19FAA032D08143200AC724A /* SubscriptionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionType.swift; sourceTree = "<group>"; };
+		B19FAA052D08143200AC724A /* CoinPackageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinPackageCell.swift; sourceTree = "<group>"; };
+		B19FAA062D08143200AC724A /* CollectionAICell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionAICell.swift; sourceTree = "<group>"; };
+		B19FAA072D08143200AC724A /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
+		B19FAA082D08143200AC724A /* FAQCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQCell.swift; sourceTree = "<group>"; };
+		B19FAA092D08143200AC724A /* HelpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCell.swift; sourceTree = "<group>"; };
+		B19FAA0A2D08143200AC724A /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		B19FAA0B2D08143200AC724A /* MyAICell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAICell.swift; sourceTree = "<group>"; };
+		B19FAA0C2D08143200AC724A /* MyMoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMoodCell.swift; sourceTree = "<group>"; };
+		B19FAA0D2D08143200AC724A /* ProfileHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderCell.swift; sourceTree = "<group>"; };
+		B19FAA0E2D08143200AC724A /* ProfileMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMenuCell.swift; sourceTree = "<group>"; };
+		B19FAA0F2D08143200AC724A /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		B19FAA102D08143200AC724A /* VIPBenefitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPBenefitCell.swift; sourceTree = "<group>"; };
+		B19FAA112D08143200AC724A /* VIPPackageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPPackageCell.swift; sourceTree = "<group>"; };
 		E4BFC5FD2D00019F00A426FD /* Runner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Runner.entitlements; sourceTree = "<group>"; };
 		E4BFC5FE2D0001D400A426FD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		E4BFC6002D0005DB00A426FD /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
@@ -284,19 +290,10 @@
 				1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */,
 				74858FAE1ED2DC5600515810 /* AppDelegate.swift */,
 				74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */,
-				AA565D3A2CFE99250091317E /* Modules */,
+				B19FA9AB2D08141C00AC724A /* Modules */,
 				AA565D3D2CFE99250091317E /* Resources */,
 			);
 			path = Runner;
-			sourceTree = "<group>";
-		};
-		AA565D3A2CFE99250091317E /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				B19FA90B2D0694E300AC724A /* Core */,
-				B19FA9512D0694E300AC724A /* Features */,
-			);
-			path = Modules;
 			sourceTree = "<group>";
 		};
 		AA565D3D2CFE99250091317E /* Resources */ = {
@@ -308,284 +305,296 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		B19FA8F02D0694E300AC724A /* Components */ = {
+		B19FA9AB2D08141C00AC724A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				B19FA8EC2D0694E300AC724A /* AnimatedTabBar.swift */,
-				B19FA8ED2D0694E300AC724A /* AnimatedTabBarItem.swift */,
-				B19FA8EE2D0694E300AC724A /* GradientButton.swift */,
-				B19FA8EF2D0694E300AC724A /* WaterfallLayout.swift */,
+				B19FA9CC2D08143200AC724A /* Core */,
+				B19FAA142D08143200AC724A /* Features */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B19FA9B02D08143200AC724A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B19FA9AC2D08143200AC724A /* AnimatedTabBar.swift */,
+				B19FA9AD2D08143200AC724A /* AnimatedTabBarItem.swift */,
+				B19FA9AE2D08143200AC724A /* GradientButton.swift */,
+				B19FA9AF2D08143200AC724A /* WaterfallLayout.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
 		};
-		B19FA8F32D0694E300AC724A /* Controllers */ = {
+		B19FA9B32D08143200AC724A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B19FA8F12D0694E300AC724A /* AppIntroViewController.swift */,
-				B19FA8F22D0694E300AC724A /* WebViewController.swift */,
+				B19FA9B12D08143200AC724A /* AppIntroViewController.swift */,
+				B19FA9B22D08143200AC724A /* WebViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		B19FA8FA2D0694E300AC724A /* Extensions */ = {
+		B19FA9BA2D08143200AC724A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B19FA8F42D0694E300AC724A /* Array+SafeSubscript.swift */,
-				B19FA8F52D0694E300AC724A /* NotificationName+Extensions.swift */,
-				B19FA8F62D0694E300AC724A /* UICollectionView+EmptyState.swift */,
-				B19FA8F72D0694E300AC724A /* UIColor+Theme.swift */,
-				B19FA8F82D0694E300AC724A /* UITableView+EmptyState.swift */,
-				B19FA8F92D0694E300AC724A /* UIViewController+Navigation.swift */,
+				B19FA9B42D08143200AC724A /* Array+SafeSubscript.swift */,
+				B19FA9B52D08143200AC724A /* NotificationName+Extensions.swift */,
+				B19FA9B62D08143200AC724A /* UICollectionView+EmptyState.swift */,
+				B19FA9B72D08143200AC724A /* UIColor+Theme.swift */,
+				B19FA9B82D08143200AC724A /* UITableView+EmptyState.swift */,
+				B19FA9B92D08143200AC724A /* UIViewController+Navigation.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		B19FA8FE2D0694E300AC724A /* Managers */ = {
+		B19FA9BE2D08143200AC724A /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				B19FA8FB2D0694E300AC724A /* AIUserDataManager.swift */,
-				B19FA8FC2D0694E300AC724A /* APPSunManager.swift */,
-				B19FA8FD2D0694E300AC724A /* UserDataManager.swift */,
+				B19FA9BB2D08143200AC724A /* AIUserDataManager.swift */,
+				B19FA9BC2D08143200AC724A /* APPSunManager.swift */,
+				B19FA9BD2D08143200AC724A /* UserDataManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
 		};
-		B19FA9032D0694E300AC724A /* Models */ = {
+		B19FA9C42D08143200AC724A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B19FA8FF2D0694E300AC724A /* AIUserModel.swift */,
-				B19FA9002D0694E300AC724A /* MoodModel.swift */,
-				B19FA9012D0694E300AC724A /* MoodPostModel.swift */,
-				B19FA9022D0694E300AC724A /* UserModel.swift */,
+				B19FA9BF2D08143200AC724A /* AIUserModel.swift */,
+				B19FA9C02D08143200AC724A /* MoodModel.swift */,
+				B19FA9C12D08143200AC724A /* MoodPostModel.swift */,
+				B19FA9C22D08143200AC724A /* UserModel.swift */,
+				B19FA9C32D08143200AC724A /* VIPBenefitModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		B19FA9052D0694E300AC724A /* Networking */ = {
+		B19FA9C62D08143200AC724A /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				B19FA9042D0694E300AC724A /* BigModelService.swift */,
+				B19FA9C52D08143200AC724A /* BigModelService.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		B19FA9082D0694E300AC724A /* Utils */ = {
+		B19FA9C92D08143200AC724A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				B19FA9062D0694E300AC724A /* ColorManager.swift */,
-				B19FA9072D0694E300AC724A /* MusicPlayerManager.swift */,
+				B19FA9C72D08143200AC724A /* ColorManager.swift */,
+				B19FA9C82D08143200AC724A /* MusicPlayerManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		B19FA90A2D0694E300AC724A /* Views */ = {
+		B19FA9CB2D08143200AC724A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B19FA9092D0694E300AC724A /* EmptyStateView.swift */,
+				B19FA9CA2D08143200AC724A /* EmptyStateView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		B19FA90B2D0694E300AC724A /* Core */ = {
+		B19FA9CC2D08143200AC724A /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				B19FA8F02D0694E300AC724A /* Components */,
-				B19FA8F32D0694E300AC724A /* Controllers */,
-				B19FA8FA2D0694E300AC724A /* Extensions */,
-				B19FA8FE2D0694E300AC724A /* Managers */,
-				B19FA9032D0694E300AC724A /* Models */,
-				B19FA9052D0694E300AC724A /* Networking */,
-				B19FA9082D0694E300AC724A /* Utils */,
-				B19FA90A2D0694E300AC724A /* Views */,
+				B19FA9B02D08143200AC724A /* Components */,
+				B19FA9B32D08143200AC724A /* Controllers */,
+				B19FA9BA2D08143200AC724A /* Extensions */,
+				B19FA9BE2D08143200AC724A /* Managers */,
+				B19FA9C42D08143200AC724A /* Models */,
+				B19FA9C62D08143200AC724A /* Networking */,
+				B19FA9C92D08143200AC724A /* Utils */,
+				B19FA9CB2D08143200AC724A /* Views */,
 			);
 			path = Core;
 			sourceTree = "<group>";
 		};
-		B19FA90E2D0694E300AC724A /* Controllers */ = {
+		B19FA9CF2D08143200AC724A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B19FA90C2D0694E300AC724A /* ChatListViewController.swift */,
-				B19FA90D2D0694E300AC724A /* ChatViewController.swift */,
+				B19FA9CD2D08143200AC724A /* ChatListViewController.swift */,
+				B19FA9CE2D08143200AC724A /* ChatViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		B19FA9102D0694E300AC724A /* Models */ = {
+		B19FA9D12D08143200AC724A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B19FA90F2D0694E300AC724A /* ChatItem.swift */,
+				B19FA9D02D08143200AC724A /* ChatItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		B19FA9142D0694E300AC724A /* Views */ = {
+		B19FA9D52D08143200AC724A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B19FA9112D0694E300AC724A /* ChatListCell.swift */,
-				B19FA9122D0694E300AC724A /* ChatMessageCell.swift */,
-				B19FA9132D0694E300AC724A /* SuggestionCell.swift */,
+				B19FA9D22D08143200AC724A /* ChatListCell.swift */,
+				B19FA9D32D08143200AC724A /* ChatMessageCell.swift */,
+				B19FA9D42D08143200AC724A /* SuggestionCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		B19FA9152D0694E300AC724A /* Chat */ = {
+		B19FA9D62D08143200AC724A /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				B19FA90E2D0694E300AC724A /* Controllers */,
-				B19FA9102D0694E300AC724A /* Models */,
-				B19FA9142D0694E300AC724A /* Views */,
+				B19FA9CF2D08143200AC724A /* Controllers */,
+				B19FA9D12D08143200AC724A /* Models */,
+				B19FA9D52D08143200AC724A /* Views */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
 		};
-		B19FA9182D0694E300AC724A /* Controllers */ = {
+		B19FA9D92D08143200AC724A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B19FA9162D0694E300AC724A /* DiscoveryViewController.swift */,
-				B19FA9172D0694E300AC724A /* PostMoodViewController.swift */,
+				B19FA9D72D08143200AC724A /* DiscoveryViewController.swift */,
+				B19FA9D82D08143200AC724A /* PostMoodViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		B19FA91B2D0694E300AC724A /* Views */ = {
+		B19FA9DC2D08143200AC724A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B19FA9192D0694E300AC724A /* MoodCardView.swift */,
-				B19FA91A2D0694E300AC724A /* MoodTypeCell.swift */,
+				B19FA9DA2D08143200AC724A /* MoodCardView.swift */,
+				B19FA9DB2D08143200AC724A /* MoodTypeCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		B19FA91C2D0694E300AC724A /* Discovery */ = {
+		B19FA9DD2D08143200AC724A /* Discovery */ = {
 			isa = PBXGroup;
 			children = (
-				B19FA9182D0694E300AC724A /* Controllers */,
-				B19FA91B2D0694E300AC724A /* Views */,
+				B19FA9D92D08143200AC724A /* Controllers */,
+				B19FA9DC2D08143200AC724A /* Views */,
 			);
 			path = Discovery;
 			sourceTree = "<group>";
 		};
-		B19FA91E2D0694E300AC724A /* Main */ = {
+		B19FA9DF2D08143200AC724A /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				B19FA91D2D0694E300AC724A /* MainTabBarController.swift */,
+				B19FA9DE2D08143200AC724A /* MainTabBarController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		B19FA9282D0694E300AC724A /* Views */ = {
+		B19FA9E92D08143200AC724A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B19FA91F2D0694E300AC724A /* AIBasicInfoView.swift */,
-				B19FA9202D0694E300AC724A /* AIDescriptionView.swift */,
-				B19FA9212D0694E300AC724A /* AIFeaturesView.swift */,
-				B19FA9222D0694E300AC724A /* AISampleDialogsView.swift */,
-				B19FA9232D0694E300AC724A /* AIStatsView.swift */,
-				B19FA9242D0694E300AC724A /* AIUserCell.swift */,
-				B19FA9252D0694E300AC724A /* CategoryHeaderView.swift */,
-				B19FA9262D0694E300AC724A /* HorizontalAIUserCell.swift */,
-				B19FA9272D0694E300AC724A /* HorizontalCategoryCell.swift */,
+				B19FA9E02D08143200AC724A /* AIBasicInfoView.swift */,
+				B19FA9E12D08143200AC724A /* AIDescriptionView.swift */,
+				B19FA9E22D08143200AC724A /* AIFeaturesView.swift */,
+				B19FA9E32D08143200AC724A /* AISampleDialogsView.swift */,
+				B19FA9E42D08143200AC724A /* AIStatsView.swift */,
+				B19FA9E52D08143200AC724A /* AIUserCell.swift */,
+				B19FA9E62D08143200AC724A /* CategoryHeaderView.swift */,
+				B19FA9E72D08143200AC724A /* HorizontalAIUserCell.swift */,
+				B19FA9E82D08143200AC724A /* HorizontalCategoryCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		B19FA92D2D0694E300AC724A /* Plaza */ = {
+		B19FA9EE2D08143200AC724A /* Plaza */ = {
 			isa = PBXGroup;
 			children = (
-				B19FA9282D0694E300AC724A /* Views */,
-				B19FA9292D0694E300AC724A /* AIDetailViewController.swift */,
-				B19FA92A2D0694E300AC724A /* AIImageViewerController.swift */,
-				B19FA92B2D0694E300AC724A /* AIUserListViewController.swift */,
-				B19FA92C2D0694E300AC724A /* PlazaViewController.swift */,
+				B19FA9E92D08143200AC724A /* Views */,
+				B19FA9EA2D08143200AC724A /* AIDetailViewController.swift */,
+				B19FA9EB2D08143200AC724A /* AIImageViewerController.swift */,
+				B19FA9EC2D08143200AC724A /* AIUserListViewController.swift */,
+				B19FA9ED2D08143200AC724A /* PlazaViewController.swift */,
 			);
 			path = Plaza;
 			sourceTree = "<group>";
 		};
-		B19FA92F2D0694E300AC724A /* Controllers */ = {
+		B19FA9F02D08143200AC724A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B19FA92E2D0694E300AC724A /* PortalViewController.swift */,
+				B19FA9EF2D08143200AC724A /* PortalViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		B19FA9302D0694E300AC724A /* Portal */ = {
+		B19FA9F12D08143200AC724A /* Portal */ = {
 			isa = PBXGroup;
 			children = (
-				B19FA92F2D0694E300AC724A /* Controllers */,
+				B19FA9F02D08143200AC724A /* Controllers */,
 			);
 			path = Portal;
 			sourceTree = "<group>";
 		};
-		B19FA93C2D0694E300AC724A /* Controllers */ = {
+		B19FA9FE2D08143200AC724A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B19FA9312D0694E300AC724A /* AboutUsViewController.swift */,
-				B19FA9322D0694E300AC724A /* CoinsPackagesViewController.swift */,
-				B19FA9332D0694E300AC724A /* CollectionViewController.swift */,
-				B19FA9342D0694E300AC724A /* FAQDetailViewController.swift */,
-				B19FA9352D0694E300AC724A /* FeedbackViewController.swift */,
-				B19FA9362D0694E300AC724A /* HistoryViewController.swift */,
-				B19FA9372D0694E300AC724A /* MyAIViewController.swift */,
-				B19FA9382D0694E300AC724A /* MyMoodsViewController.swift */,
-				B19FA9392D0694E300AC724A /* ProfileViewController.swift */,
-				B19FA93A2D0694E300AC724A /* SettingsViewController.swift */,
-				B19FA93B2D0694E300AC724A /* VIPPackagesViewController.swift */,
+				B19FA9F22D08143200AC724A /* AboutUsViewController.swift */,
+				B19FA9F32D08143200AC724A /* CoinsPackagesViewController.swift */,
+				B19FA9F42D08143200AC724A /* CollectionViewController.swift */,
+				B19FA9F52D08143200AC724A /* FAQDetailViewController.swift */,
+				B19FA9F62D08143200AC724A /* FeedbackViewController.swift */,
+				B19FA9F72D08143200AC724A /* HistoryViewController.swift */,
+				B19FA9F82D08143200AC724A /* MyAIViewController.swift */,
+				B19FA9F92D08143200AC724A /* MyMoodsViewController.swift */,
+				B19FA9FA2D08143200AC724A /* ProfileViewController.swift */,
+				B19FA9FB2D08143200AC724A /* SettingsViewController.swift */,
+				B19FA9FC2D08143200AC724A /* TermsViewController.swift */,
+				B19FA9FD2D08143200AC724A /* VIPPackagesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		B19FA9422D0694E300AC724A /* Models */ = {
+		B19FAA042D08143200AC724A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B19FA93D2D0694E300AC724A /* BrowsingHistoryItem.swift */,
-				B19FA93E2D0694E300AC724A /* HelpItem.swift */,
-				B19FA93F2D0694E300AC724A /* MenuItem.swift */,
-				B19FA9402D0694E300AC724A /* SettingItem.swift */,
-				B19FA9412D0694E300AC724A /* SubscriptionType.swift */,
+				B19FA9FF2D08143200AC724A /* BrowsingHistoryItem.swift */,
+				B19FAA002D08143200AC724A /* HelpItem.swift */,
+				B19FAA012D08143200AC724A /* MenuItem.swift */,
+				B19FAA022D08143200AC724A /* SettingItem.swift */,
+				B19FAA032D08143200AC724A /* SubscriptionType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		B19FA94F2D0694E300AC724A /* Views */ = {
+		B19FAA122D08143200AC724A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B19FA9432D0694E300AC724A /* CoinPackageCell.swift */,
-				B19FA9442D0694E300AC724A /* CollectionAICell.swift */,
-				B19FA9452D0694E300AC724A /* CollectionHeaderView.swift */,
-				B19FA9462D0694E300AC724A /* FAQCell.swift */,
-				B19FA9472D0694E300AC724A /* HelpCell.swift */,
-				B19FA9482D0694E300AC724A /* HistoryCell.swift */,
-				B19FA9492D0694E300AC724A /* MyAICell.swift */,
-				B19FA94A2D0694E300AC724A /* MyMoodCell.swift */,
-				B19FA94B2D0694E300AC724A /* ProfileHeaderCell.swift */,
-				B19FA94C2D0694E300AC724A /* ProfileMenuCell.swift */,
-				B19FA94D2D0694E300AC724A /* SettingCell.swift */,
-				B19FA94E2D0694E300AC724A /* VIPPackageCell.swift */,
+				B19FAA052D08143200AC724A /* CoinPackageCell.swift */,
+				B19FAA062D08143200AC724A /* CollectionAICell.swift */,
+				B19FAA072D08143200AC724A /* CollectionHeaderView.swift */,
+				B19FAA082D08143200AC724A /* FAQCell.swift */,
+				B19FAA092D08143200AC724A /* HelpCell.swift */,
+				B19FAA0A2D08143200AC724A /* HistoryCell.swift */,
+				B19FAA0B2D08143200AC724A /* MyAICell.swift */,
+				B19FAA0C2D08143200AC724A /* MyMoodCell.swift */,
+				B19FAA0D2D08143200AC724A /* ProfileHeaderCell.swift */,
+				B19FAA0E2D08143200AC724A /* ProfileMenuCell.swift */,
+				B19FAA0F2D08143200AC724A /* SettingCell.swift */,
+				B19FAA102D08143200AC724A /* VIPBenefitCell.swift */,
+				B19FAA112D08143200AC724A /* VIPPackageCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		B19FA9502D0694E300AC724A /* Profile */ = {
+		B19FAA132D08143200AC724A /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				B19FA93C2D0694E300AC724A /* Controllers */,
-				B19FA9422D0694E300AC724A /* Models */,
-				B19FA94F2D0694E300AC724A /* Views */,
+				B19FA9FE2D08143200AC724A /* Controllers */,
+				B19FAA042D08143200AC724A /* Models */,
+				B19FAA122D08143200AC724A /* Views */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		B19FA9512D0694E300AC724A /* Features */ = {
+		B19FAA142D08143200AC724A /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				B19FA9152D0694E300AC724A /* Chat */,
-				B19FA91C2D0694E300AC724A /* Discovery */,
-				B19FA91E2D0694E300AC724A /* Main */,
-				B19FA92D2D0694E300AC724A /* Plaza */,
-				B19FA9302D0694E300AC724A /* Portal */,
-				B19FA9502D0694E300AC724A /* Profile */,
+				B19FA9D62D08143200AC724A /* Chat */,
+				B19FA9DD2D08143200AC724A /* Discovery */,
+				B19FA9DF2D08143200AC724A /* Main */,
+				B19FA9EE2D08143200AC724A /* Plaza */,
+				B19FA9F12D08143200AC724A /* Portal */,
+				B19FAA132D08143200AC724A /* Profile */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -745,82 +754,85 @@
 			files = (
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
-				B19FA9522D0694E300AC724A /* UITableView+EmptyState.swift in Sources */,
-				B19FA9532D0694E300AC724A /* SettingsViewController.swift in Sources */,
-				B19FA9542D0694E300AC724A /* MusicPlayerManager.swift in Sources */,
-				B19FA9552D0694E300AC724A /* ColorManager.swift in Sources */,
-				B19FA9562D0694E300AC724A /* NotificationName+Extensions.swift in Sources */,
-				B19FA9572D0694E300AC724A /* MainTabBarController.swift in Sources */,
-				B19FA9582D0694E300AC724A /* UIViewController+Navigation.swift in Sources */,
-				B19FA9592D0694E300AC724A /* WaterfallLayout.swift in Sources */,
-				B19FA95A2D0694E300AC724A /* MyAICell.swift in Sources */,
-				B19FA95B2D0694E300AC724A /* AboutUsViewController.swift in Sources */,
-				B19FA95C2D0694E300AC724A /* HelpCell.swift in Sources */,
-				B19FA95D2D0694E300AC724A /* GradientButton.swift in Sources */,
-				B19FA95E2D0694E300AC724A /* EmptyStateView.swift in Sources */,
-				B19FA95F2D0694E300AC724A /* CollectionHeaderView.swift in Sources */,
-				B19FA9602D0694E300AC724A /* CategoryHeaderView.swift in Sources */,
-				B19FA9612D0694E300AC724A /* ChatListCell.swift in Sources */,
-				B19FA9622D0694E300AC724A /* PostMoodViewController.swift in Sources */,
-				B19FA9632D0694E300AC724A /* AppIntroViewController.swift in Sources */,
-				B19FA9642D0694E300AC724A /* AIDetailViewController.swift in Sources */,
-				B19FA9652D0694E300AC724A /* PortalViewController.swift in Sources */,
-				B19FA9662D0694E300AC724A /* MyAIViewController.swift in Sources */,
-				B19FA9672D0694E300AC724A /* FAQDetailViewController.swift in Sources */,
-				B19FA9682D0694E300AC724A /* MyMoodsViewController.swift in Sources */,
-				B19FA9692D0694E300AC724A /* BigModelService.swift in Sources */,
-				B19FA96A2D0694E300AC724A /* MoodModel.swift in Sources */,
-				B19FA96B2D0694E300AC724A /* ChatListViewController.swift in Sources */,
-				B19FA96C2D0694E300AC724A /* WebViewController.swift in Sources */,
-				B19FA96D2D0694E300AC724A /* AIFeaturesView.swift in Sources */,
-				B19FA96E2D0694E300AC724A /* HelpItem.swift in Sources */,
-				B19FA96F2D0694E300AC724A /* ChatItem.swift in Sources */,
-				B19FA9702D0694E300AC724A /* ProfileMenuCell.swift in Sources */,
-				B19FA9712D0694E300AC724A /* BrowsingHistoryItem.swift in Sources */,
-				B19FA9722D0694E300AC724A /* HorizontalAIUserCell.swift in Sources */,
-				B19FA9732D0694E300AC724A /* SettingCell.swift in Sources */,
-				B19FA9742D0694E300AC724A /* MoodCardView.swift in Sources */,
-				B19FA9752D0694E300AC724A /* ChatViewController.swift in Sources */,
-				B19FA9762D0694E300AC724A /* AIUserDataManager.swift in Sources */,
-				B19FA9772D0694E300AC724A /* VIPPackagesViewController.swift in Sources */,
-				B19FA9782D0694E300AC724A /* HistoryViewController.swift in Sources */,
-				B19FA9792D0694E300AC724A /* MoodPostModel.swift in Sources */,
-				B19FA97A2D0694E300AC724A /* SubscriptionType.swift in Sources */,
-				B19FA97B2D0694E300AC724A /* ChatMessageCell.swift in Sources */,
-				B19FA97C2D0694E300AC724A /* CollectionViewController.swift in Sources */,
-				B19FA97D2D0694E300AC724A /* AnimatedTabBarItem.swift in Sources */,
-				B19FA97E2D0694E300AC724A /* SettingItem.swift in Sources */,
-				B19FA97F2D0694E300AC724A /* AIBasicInfoView.swift in Sources */,
-				B19FA9802D0694E300AC724A /* AnimatedTabBar.swift in Sources */,
-				B19FA9812D0694E300AC724A /* DiscoveryViewController.swift in Sources */,
-				B19FA9822D0694E300AC724A /* AIUserListViewController.swift in Sources */,
-				B19FA9832D0694E300AC724A /* VIPPackageCell.swift in Sources */,
-				B19FA9842D0694E300AC724A /* HorizontalCategoryCell.swift in Sources */,
-				B19FA9852D0694E300AC724A /* PlazaViewController.swift in Sources */,
-				B19FA9862D0694E300AC724A /* CollectionAICell.swift in Sources */,
-				B19FA9872D0694E300AC724A /* SuggestionCell.swift in Sources */,
-				B19FA9882D0694E300AC724A /* CoinPackageCell.swift in Sources */,
-				B19FA9892D0694E300AC724A /* UIColor+Theme.swift in Sources */,
-				B19FA98A2D0694E300AC724A /* CoinsPackagesViewController.swift in Sources */,
-				B19FA98B2D0694E300AC724A /* Array+SafeSubscript.swift in Sources */,
-				B19FA98C2D0694E300AC724A /* HistoryCell.swift in Sources */,
-				B19FA98D2D0694E300AC724A /* AISampleDialogsView.swift in Sources */,
-				B19FA98E2D0694E300AC724A /* APPSunManager.swift in Sources */,
-				B19FA98F2D0694E300AC724A /* AIDescriptionView.swift in Sources */,
-				B19FA9902D0694E300AC724A /* AIStatsView.swift in Sources */,
-				B19FA9912D0694E300AC724A /* ProfileHeaderCell.swift in Sources */,
-				B19FA9922D0694E300AC724A /* UserModel.swift in Sources */,
-				B19FA9932D0694E300AC724A /* MyMoodCell.swift in Sources */,
-				B19FA9942D0694E300AC724A /* UICollectionView+EmptyState.swift in Sources */,
-				B19FA9952D0694E300AC724A /* AIUserModel.swift in Sources */,
-				B19FA9962D0694E300AC724A /* AIUserCell.swift in Sources */,
-				B19FA9972D0694E300AC724A /* ProfileViewController.swift in Sources */,
-				B19FA9982D0694E300AC724A /* UserDataManager.swift in Sources */,
-				B19FA9992D0694E300AC724A /* FeedbackViewController.swift in Sources */,
-				B19FA99A2D0694E300AC724A /* AIImageViewerController.swift in Sources */,
-				B19FA99B2D0694E300AC724A /* MenuItem.swift in Sources */,
-				B19FA99C2D0694E300AC724A /* MoodTypeCell.swift in Sources */,
-				B19FA99D2D0694E300AC724A /* FAQCell.swift in Sources */,
+				B19FAA152D08143200AC724A /* Array+SafeSubscript.swift in Sources */,
+				B19FAA162D08143200AC724A /* HelpItem.swift in Sources */,
+				B19FAA172D08143200AC724A /* PortalViewController.swift in Sources */,
+				B19FAA182D08143200AC724A /* UICollectionView+EmptyState.swift in Sources */,
+				B19FAA192D08143200AC724A /* VIPPackageCell.swift in Sources */,
+				B19FAA1A2D08143200AC724A /* ProfileViewController.swift in Sources */,
+				B19FAA1B2D08143200AC724A /* AIUserListViewController.swift in Sources */,
+				B19FAA1C2D08143200AC724A /* UIViewController+Navigation.swift in Sources */,
+				B19FAA1D2D08143200AC724A /* ChatListCell.swift in Sources */,
+				B19FAA1E2D08143200AC724A /* CoinPackageCell.swift in Sources */,
+				B19FAA1F2D08143200AC724A /* ChatListViewController.swift in Sources */,
+				B19FAA202D08143200AC724A /* MoodPostModel.swift in Sources */,
+				B19FAA212D08143200AC724A /* DiscoveryViewController.swift in Sources */,
+				B19FAA222D08143200AC724A /* PlazaViewController.swift in Sources */,
+				B19FAA232D08143200AC724A /* UIColor+Theme.swift in Sources */,
+				B19FAA242D08143200AC724A /* HistoryCell.swift in Sources */,
+				B19FAA252D08143200AC724A /* NotificationName+Extensions.swift in Sources */,
+				B19FAA262D08143200AC724A /* AIImageViewerController.swift in Sources */,
+				B19FAA272D08143200AC724A /* ColorManager.swift in Sources */,
+				B19FAA282D08143200AC724A /* HistoryViewController.swift in Sources */,
+				B19FAA292D08143200AC724A /* AIUserDataManager.swift in Sources */,
+				B19FAA2A2D08143200AC724A /* ChatViewController.swift in Sources */,
+				B19FAA2B2D08143200AC724A /* WaterfallLayout.swift in Sources */,
+				B19FAA2C2D08143200AC724A /* MyMoodsViewController.swift in Sources */,
+				B19FAA2D2D08143200AC724A /* MainTabBarController.swift in Sources */,
+				B19FAA2E2D08143200AC724A /* AIStatsView.swift in Sources */,
+				B19FAA2F2D08143200AC724A /* BrowsingHistoryItem.swift in Sources */,
+				B19FAA302D08143200AC724A /* FAQCell.swift in Sources */,
+				B19FAA312D08143200AC724A /* AIBasicInfoView.swift in Sources */,
+				B19FAA322D08143200AC724A /* VIPPackagesViewController.swift in Sources */,
+				B19FAA332D08143200AC724A /* APPSunManager.swift in Sources */,
+				B19FAA342D08143200AC724A /* EmptyStateView.swift in Sources */,
+				B19FAA352D08143200AC724A /* AIUserCell.swift in Sources */,
+				B19FAA362D08143200AC724A /* ChatMessageCell.swift in Sources */,
+				B19FAA372D08143200AC724A /* VIPBenefitCell.swift in Sources */,
+				B19FAA382D08143200AC724A /* AIDescriptionView.swift in Sources */,
+				B19FAA392D08143200AC724A /* GradientButton.swift in Sources */,
+				B19FAA3A2D08143200AC724A /* AboutUsViewController.swift in Sources */,
+				B19FAA3B2D08143200AC724A /* AnimatedTabBar.swift in Sources */,
+				B19FAA3C2D08143200AC724A /* MyAIViewController.swift in Sources */,
+				B19FAA3D2D08143200AC724A /* CategoryHeaderView.swift in Sources */,
+				B19FAA3E2D08143200AC724A /* PostMoodViewController.swift in Sources */,
+				B19FAA3F2D08143200AC724A /* SettingItem.swift in Sources */,
+				B19FAA402D08143200AC724A /* CoinsPackagesViewController.swift in Sources */,
+				B19FAA412D08143200AC724A /* SettingsViewController.swift in Sources */,
+				B19FAA422D08143200AC724A /* MenuItem.swift in Sources */,
+				B19FAA432D08143200AC724A /* ProfileHeaderCell.swift in Sources */,
+				B19FAA442D08143200AC724A /* HelpCell.swift in Sources */,
+				B19FAA452D08143200AC724A /* ProfileMenuCell.swift in Sources */,
+				B19FAA462D08143200AC724A /* AIUserModel.swift in Sources */,
+				B19FAA472D08143200AC724A /* BigModelService.swift in Sources */,
+				B19FAA482D08143200AC724A /* FeedbackViewController.swift in Sources */,
+				B19FAA492D08143200AC724A /* CollectionAICell.swift in Sources */,
+				B19FAA4A2D08143200AC724A /* SuggestionCell.swift in Sources */,
+				B19FAA4B2D08143200AC724A /* HorizontalAIUserCell.swift in Sources */,
+				B19FAA4C2D08143200AC724A /* AISampleDialogsView.swift in Sources */,
+				B19FAA4D2D08143200AC724A /* AIDetailViewController.swift in Sources */,
+				B19FAA4E2D08143200AC724A /* MyAICell.swift in Sources */,
+				B19FAA4F2D08143200AC724A /* SubscriptionType.swift in Sources */,
+				B19FAA502D08143200AC724A /* AnimatedTabBarItem.swift in Sources */,
+				B19FAA512D08143200AC724A /* MusicPlayerManager.swift in Sources */,
+				B19FAA522D08143200AC724A /* MoodModel.swift in Sources */,
+				B19FAA532D08143200AC724A /* UITableView+EmptyState.swift in Sources */,
+				B19FAA542D08143200AC724A /* ChatItem.swift in Sources */,
+				B19FAA552D08143200AC724A /* FAQDetailViewController.swift in Sources */,
+				B19FAA562D08143200AC724A /* VIPBenefitModel.swift in Sources */,
+				B19FAA572D08143200AC724A /* MoodTypeCell.swift in Sources */,
+				B19FAA582D08143200AC724A /* SettingCell.swift in Sources */,
+				B19FAA592D08143200AC724A /* HorizontalCategoryCell.swift in Sources */,
+				B19FAA5A2D08143200AC724A /* CollectionViewController.swift in Sources */,
+				B19FAA5B2D08143200AC724A /* WebViewController.swift in Sources */,
+				B19FAA5C2D08143200AC724A /* CollectionHeaderView.swift in Sources */,
+				B19FAA5D2D08143200AC724A /* UserDataManager.swift in Sources */,
+				B19FAA5E2D08143200AC724A /* UserModel.swift in Sources */,
+				B19FAA5F2D08143200AC724A /* MoodCardView.swift in Sources */,
+				B19FAA602D08143200AC724A /* TermsViewController.swift in Sources */,
+				B19FAA612D08143200AC724A /* AppIntroViewController.swift in Sources */,
+				B19FAA622D08143200AC724A /* MyMoodCell.swift in Sources */,
+				B19FAA632D08143200AC724A /* AIFeaturesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
