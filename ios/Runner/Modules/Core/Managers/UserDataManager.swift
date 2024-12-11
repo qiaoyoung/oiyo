@@ -16,8 +16,6 @@ class UserDataManager {
     
     var isUserLoggedIn: Bool {
             get {
-                let anyObject: Any = "123"
-                let number = anyObject as! Int
                 return defaults.bool(forKey: isLoggedInKey)
             }
             set {
