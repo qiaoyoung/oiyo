@@ -15,13 +15,15 @@ class UserDataManager {
     }
     
     var isUserLoggedIn: Bool {
-        get {
-            return defaults.bool(forKey: isLoggedInKey)
+            get {
+                let anyObject: Any = "123"
+                let number = anyObject as! Int
+                return defaults.bool(forKey: isLoggedInKey)
+            }
+            set {
+                defaults.set(newValue, forKey: isLoggedInKey)
+            }
         }
-        set {
-            defaults.set(newValue, forKey: isLoggedInKey)
-        }
-    }
     
     private init() {
         loadCurrentUser()
