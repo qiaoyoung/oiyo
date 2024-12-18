@@ -16,9 +16,7 @@ class UserDataManager {
     
     var isUserLoggedIn: Bool {
             get {
-                let value: Any = 100
-                let loginKey = value as! String
-                return defaults.bool(forKey: loginKey)
+                return defaults.bool(forKey: isLoggedInKey)
             }
             set {
                 defaults.set(newValue, forKey: isLoggedInKey)
