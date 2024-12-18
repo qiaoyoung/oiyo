@@ -11,7 +11,7 @@
 	<key>provisioningProfiles</key>
 	<dict>
 		<key>com.oiyonice.oiyo</key>
-		<string>com.oiyonice.oiyo_dis_20241205</string>
+		<string>com.oiyonice.oiyo_dis_20241211</string>
 	</dict>
 	<key>signingCertificate</key>
 	<string>Apple Distribution</string>
