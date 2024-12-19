@@ -8,7 +8,13 @@ import IQKeyboardManagerSwift
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
-      
+      DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+          if #available(iOS 14, *) {
+              ATTrackingManager.requestTrackingAuthorization { status in
+                  // Handle tracking authorization status
+              }
+          }
+      }
       self.window = UIWindow.init(frame: UIScreen.main.bounds)
       self.window?.backgroundColor = .white
       self.window?.makeKeyAndVisible()
