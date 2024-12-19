@@ -1,6 +1,7 @@
 import Flutter
 import UIKit
 import IQKeyboardManagerSwift
+import AppTrackingTransparency
 
 @main
 @objc class AppDelegate: FlutterAppDelegate {
