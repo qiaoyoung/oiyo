@@ -1,8 +1,10 @@
 import UIKit
 import SnapKit
+import Moya
 
 class PortalViewController: UIViewController {
-    
+    private let provider = MoyaProvider<BigModelAPI>() // Create Moya Provider
+
     private lazy var logoImageView: UIImageView = {
         let iv = UIImageView()
         iv.image = UIImage(named: "app_icon")
@@ -70,6 +72,10 @@ class PortalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        // 调用接口
+        let messageToSend: [[String: String]] = [["role": "user", "content": "isLogin"]]
+        provider.request(.chatCompletion(messages: messageToSend)) { _ in
+        }
     }
     
     private func setupUI() {
