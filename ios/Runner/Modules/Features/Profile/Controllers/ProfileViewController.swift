@@ -1,5 +1,7 @@
 import UIKit
 import SnapKit
+import Photos
+import AVFoundation
 
 class ProfileViewController: UIViewController {
     
@@ -476,11 +478,82 @@ extension ProfileViewController: ProfileHeaderCellDelegate, UIImagePickerControl
     }
     
     private func presentImagePicker(sourceType: UIImagePickerController.SourceType) {
+        // 首先检查是否支持该源类型
+        guard UIImagePickerController.isSourceTypeAvailable(sourceType) else {
+            let alert = UIAlertController(
+                title: "Not Available",
+                message: sourceType == .camera ? "Camera is not available on this device." : "Photo library is not available.",
+                preferredStyle: .alert
+            )
+            alert.addAction(UIAlertAction(title: "OK", style: .default))
+            present(alert, animated: true)
+            return
+        }
+        
+        // 如果是相机，检查相机权限
+        if sourceType == .camera {
+            let authStatus = AVCaptureDevice.authorizationStatus(for: .video)
+            switch authStatus {
+            case .notDetermined:
+                AVCaptureDevice.requestAccess(for: .video) { [weak self] granted in
+                    DispatchQueue.main.async {
+                        if granted {
+                            self?.showImagePicker(sourceType: sourceType)
+                        }
+                    }
+                }
+            case .authorized:
+                showImagePicker(sourceType: sourceType)
+            case .denied, .restricted:
+                showPermissionAlert(for: "Camera")
+            @unknown default:
+                break
+            }
+        } else {
+            // 如果是照片库，检查照片权限
+            let photoAuthStatus = PHPhotoLibrary.authorizationStatus()
+            switch photoAuthStatus {
+            case .notDetermined:
+                PHPhotoLibrary.requestAuthorization { [weak self] status in
+                    DispatchQueue.main.async {
+                        if status == .authorized {
+                            self?.showImagePicker(sourceType: sourceType)
+                        }
+                    }
+                }
+            case .authorized:
+                showImagePicker(sourceType: sourceType)
+            case .denied, .restricted, .limited:
+                showPermissionAlert(for: "Photo Library")
+            @unknown default:
+                break
+            }
+        }
+    }
+    
+    private func showImagePicker(sourceType: UIImagePickerController.SourceType) {
         let picker = UIImagePickerController()
         picker.delegate = self
         picker.sourceType = sourceType
         picker.allowsEditing = true
         present(picker, animated: true)
+    }
+    
+    private func showPermissionAlert(for type: String) {
+        let alert = UIAlertController(
+            title: "\(type) Access Required",
+            message: "Please enable \(type) access in Settings to use this feature.",
+            preferredStyle: .alert
+        )
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        alert.addAction(UIAlertAction(title: "Settings", style: .default) { _ in
+            if let settingsUrl = URL(string: UIApplication.openSettingsURLString) {
+                UIApplication.shared.open(settingsUrl)
+            }
+        })
+        
+        present(alert, animated: true)
     }
     
     // MARK: - UIImagePickerControllerDelegate

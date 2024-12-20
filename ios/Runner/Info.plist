@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Oiyo requires access to add new photos to your library, enabling you to save photos directly from the app.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>We need access to your camera to take profile photos.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We need access to your photo library to select profile photos.</string>
 	<key>NSUserTrackingUsageDescription</key>
 	<string>Oiyo uses device identifier information to enhance the security of your account transactions and provide personalized advertising services tailored to your preferences.</string>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
